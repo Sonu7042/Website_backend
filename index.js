@@ -7,6 +7,7 @@ const router=require('./routes')
 
 
 const app=express()
+app.use(cors())
 app.use(cors({
     origin: process.env.Frontend_Url,
     credentials:true
