@@ -6,7 +6,7 @@ const addToCartViewController= async(req, res)=>{
 
         const userId= req.userId
 
-        const allProduct= await  cartProduct.find({userId : userId})
+        const allProduct= await  cartProduct.find({userId : userId}).populate("productId")
 
         res.status(200).json({
             message : "all Product",
