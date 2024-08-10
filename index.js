@@ -21,6 +21,6 @@ const port= 8080 || process.env.PORT
 
 
 connectDB()
-// app.listen( ()=>{
-//     console.log("server is running")
-// })
+app.listen(port, ()=>{
+    console.log("server is running")
+})
